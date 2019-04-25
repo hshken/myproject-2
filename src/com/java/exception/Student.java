@@ -24,7 +24,7 @@ public class Student {
 		}catch(NumberFormatException e) {
 			System.out.println("數字格式錯誤");
 		}catch(pointException e) {
-			System.out.println("請輸入0-100之間");
+			System.out.println("錯誤，請輸入0-100之間");
 		}
 
 	}
