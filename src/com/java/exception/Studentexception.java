@@ -6,16 +6,12 @@ public class Studentexception {
 		
 	}
 	class PPoint{
-	   private double point;
+	   public double point;
 	   public void setpoint(double p) throws pointException{
 	      if(p<0 || p>100){
 	         throw new pointException();
 	      }
-	      else
-	         point=p;
-	   }
-	   }
-	   public static void main(String args[]){
-		   PPoint poi=new PPoint();
-	   }
+	    }
+	 }public static void main (String[] args) {
+	}
 }

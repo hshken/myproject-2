@@ -22,6 +22,7 @@ public class Student {
 		}catch(ArithmeticException e) {
 			System.out.println("數值運算錯誤");
 		}catch(NumberFormatException e) {
+			//e.printStackTrace();開發者用
 			System.out.println("數字格式錯誤");
 		}catch(pointException e) {
 			System.out.println("錯誤，請輸入0-100之間");
