@@ -2,9 +2,9 @@ package com.java.exception;
 
 public class Score {
 	int value;
- public Score(String s) throws ScoreFormatException{
+ public Score(int score) throws ScoreFormatException{
 	 try {
-		value =Integer.parseInt(s); 
+		value =score; 
 	 }catch(NumberFormatException e) {
 		 throw new ScoreFormatException();
 	 }
