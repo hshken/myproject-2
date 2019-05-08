@@ -5,29 +5,27 @@ import java.util.Scanner;
 import com.java.exception.ScoreFormatException;
 
 public class Pizza {
-	int piece;
-	 public Pizza(int piece) throws PizzaException{
+	
+	 public Pizza(String ans) throws PizzaException{
+		 int piece;
+		 try {
+			 piece = Integer.parseInt(ans);
+		 }catch(NumberFormatException e) {
+			 System.out.println("請輸入數字");
+			 throw new PizzaException(ans);
+		 }
 		 if(piece == 0) {
-			 throw new PizzaException("你確定不要切?");
-		 }else {
-			System.out.println("");
-			
+			System.out.println("你確定不要切?");
 		 }if(piece<8 && piece >0 ) {
-			 throw new PizzaException("數量錯誤");
-		 }else {
-			 System.out.println("");
+			 System.out.println("數量錯誤");
 		 }if(piece<12 && piece >8 ) {
-			 throw new PizzaException("數量錯誤");
-		 }else {
-			 System.out.println("");
+			 System.out.println("數量錯誤");
 		 }if(piece<16 && piece >12 ) {
-			 throw new PizzaException("數量錯誤");
-		 }else {
-			 System.out.println("");
+			 System.out.println("數量錯誤");
 		 }if(piece <0 ) {
-			 throw new PizzaException("超出範圍");
-		 }else {
-			 System.out.println("");
+			 System.out.println("超出範圍");
+		 }if(piece==8||piece==12||piece==16) {
+			 System.out.println("謝謝惠顧");
 		 }
 	 }
 }
