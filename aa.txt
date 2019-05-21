@@ -1,0 +1,5 @@
+ken,6
+jack 16
+kevin 8
+lewis 8
+ken huang 6
