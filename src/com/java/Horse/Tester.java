@@ -12,7 +12,7 @@ public class Tester {
 		HorseRunnable h1 = new HorseRunnable();
 		Thread thread = new Thread(h1);
 		thread.start();
-		 System.out.println("end111111111111111111111111111111111111");
+		 System.out.println("end game");
 	}
    
 }
